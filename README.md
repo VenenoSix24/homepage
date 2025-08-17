@@ -8,9 +8,17 @@
 
 > **我的演示站**：[https://m.776624.xyz](https://m.776624.xyz)
 
-![home-ivy-1](https://s2.loli.net/2025/08/17/MsPNX8Bh6kopcw2.jpg)
+- **PC 截图-1**
 
-![home-ivy-2](https://s2.loli.net/2025/08/17/OXzSBFD1E8RsIa5.jpg)
+![](https://s2.loli.net/2025/08/17/J5UvNpkX96CjcxG.jpg)
+
+- **PC 截图-2**
+
+![](https://s2.loli.net/2025/08/17/NvdM5G3aVsFf1zg.jpg)
+
+- **手机截图**
+
+<img src="https://s2.loli.net/2025/08/17/iXGUpEe7zt2b5Zu.jpg"  />
 
 ## 🚀 我的主要修改
 
