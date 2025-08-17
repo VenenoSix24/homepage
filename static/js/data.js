@@ -2,7 +2,7 @@
 
 const siteConfig = {
     // 网站信息
-    title: "Ivyris",
+    title: "Home 🩷Ivyris",
     author: "ivyris",
     logo: "./static/img/logo.webp",
     logoFrame: "./static/img/logokuang.webp",
@@ -20,15 +20,15 @@ const siteConfig = {
     
     // 左侧边栏
   sidebar: {
-        location: "China-Shandong",
+        location: "Earth-China",
         locationIcon: '<svg t="1705773709627" class="icon" viewBox="0 0 1024 1024"><path d="M512 249.976471c-99.388235 0-180.705882 81.317647-180.705882 180.705882s81.317647 180.705882 180.705882 180.705882 180.705882-81.317647 180.705882-180.705882-81.317647-180.705882-180.705882-180.705882z m0 301.17647c-66.258824 0-120.470588-54.211765-120.470588-120.470588s54.211765-120.470588 120.470588-120.470588 120.470588 54.211765 120.470588 120.470588-54.211765 120.470588-120.470588 120.470588z"></path><path d="M512 39.152941c-216.847059 0-391.529412 174.682353-391.529412 391.529412 0 349.364706 391.529412 572.235294 391.529412 572.235294s391.529412-222.870588 391.529412-572.235294c0-216.847059-174.682353-391.529412-391.529412-391.529412z m0 891.482353C424.658824 873.411765 180.705882 686.682353 180.705882 430.682353c0-183.717647 147.576471-331.294118 331.294118-331.294118s331.294118 147.576471 331.294118 331.294118c0 256-243.952941 442.729412-331.294118 499.952941z"></path></svg>',
-        status: "Study",
+        status: "Study & Life",
         statusIcon: '<svg t="1705773906032" class="icon" viewBox="0 0 1024 1024"><path d="M729.6 234.666667H294.4V157.866667a51.2 51.2 0 0 1 51.2-51.2h332.8a51.2 51.2 0 0 1 51.2 51.2v76.8z m179.2 51.2a51.2 51.2 0 0 1 51.2 51.2v512a51.2 51.2 0 0 1-51.2 51.2H115.2a51.2 51.2 0 0 1-51.2-51.2v-512a51.2 51.2 0 0 1 51.2-51.2h793.557333z m-768 172.032c0 16.384 13.312 29.696 29.696 29.696h683.008a29.696 29.696 0 1 0 0-59.392H170.410667a29.696 29.696 0 0 0-29.696 29.696z m252.416 118.784c0 16.384 13.312 29.696 29.696 29.696h178.176a29.696 29.696 0 1 0 0-59.392H422.912a29.738667 29.738667 0 0 0-29.696 29.696z"></path></svg>',
-        tags: ["网瘾", "小学", "大四", "网页", "运维", "模拟", "前端", "游戏", "业余"],
+        tags: ["实用", "小学", "大四", "网页", "运维", "前端", "模拟", "游戏", "业余"],
         timeline: [
             { year: "2025.6", event: "敬请期待" },
-            { year: "2025.5", event: "ICP备案成功" },
-            { year: "2025.3", event: "注册域名6aig.cn" },
+            { year: "2025.5", event: "ICP 备案成功" },
+            { year: "2025.3", event: "注册域名" },
             { year: "2023.3", event: "跌入谷底" },
             { year: "...", event: "..." },
             { year: "2018.1", event: "搭建第一个网站" }
@@ -45,24 +45,24 @@ const siteConfig = {
 
     // 项目列表
     siteProjects: [
-        { class: 'a', href: "https://love.776624.xyz/", imgSrc: "./static/img/i1.webp", title: "博客", description: "记录摆烂日常" },
-        { class: 'a', href: "https://home.776624.xyz", imgSrc: "./static/img/i2.webp", title: "主页", description: "我的另一个主页" },
-        { class: 'a', href: "https://m.776624.xyz", imgSrc: "./static/img/i4.webp", title: "实验室", description: "收集有趣html作品" },
-        { class: 'a', href: "https://m.776624.xyz", imgSrc: "./static/img/i4.webp", title: "实验室", description: "收集有趣html作品" }
+        { class: 'a', href: "https://love.776624.xyz/", imgSrc: "./static/img/n10.webp", title: "📔 博客", description: "记录点点滴滴" },
+        { class: 'a', href: "https://home.776624.xyz", imgSrc: "./static/img/n5.webp", title: "🪴 主页", description: "另一个好看主页" },
+        { class: 'a', href: "https://liveterm.776624.xyz/", imgSrc: "./static/img/n6.webp", title: "🖥 终端", description: "有趣的在线终端" },
+        { class: 'a', href: "https://hello-nav.776624.xyz/", imgSrc: "./static/img/n1.webp", title: "🔗 导航", description: "开发者必备导航" }
     ],
     projectProjects: [
-        { class: 'b', href: "https://love.776624.xyz/", imgSrc: "./static/img/i1.webp", title: "博客", description: "记录摆烂日常" },
-        { class: 'b', href: "https://m.776624.xyz", imgSrc: "./static/img/i2.webp", title: "主页", description: "我的另一个主页" },
-        { class: 'b', href: "https://m.776624.xyz", imgSrc: "./static/img/i4.webp", title: "实验室", description: "收集有趣html作品" },
-        { class: 'b', href: "https://m.776624.xyz", imgSrc: "./static/img/i4.webp", title: "实验室", description: "收集有趣html作品" }
+        { class: 'b', href: "https://github.com/VenenoSix24/igolib-ldu", imgSrc: "./static/img/n2.webp", title: "🤖 我去抢个座", description: "基于 Python 实现的预约抢座系统" },
+        { class: 'b', href: "https://github.com/VenenoSix24/kawaii-homepage", imgSrc: "./static/img/n8.webp", title: "🌸 总之就是非常可爱", description: "一个美观的个人网站/主页/博客" },
+        { class: 'b', href: "https://m.776624.xyz", imgSrc: "./static/img/n13.webp", title: "🍎 Hackintosh OC EFI", description: "适配 AMD CPU GPU 的黑苹果 EFI" },
+        { class: 'b', href: "https://github.com/VenenoSix24/DV-Encrypter", imgSrc: "./static/img/n7.webp", title: "🎲 打瓦加密器", description: "使用“打”“瓦”来加解密文本，娱乐向" }
     ],
 
     // 技能
     skills: {
         // pc: "./static/svg/skillPc.svg",   // 本地 SVG 文件
         // wap: "./static/svg/skillWap.svg"  // 本地 SVG 文件
-        pc: "https://skillicons.dev/icons?i=ae,androidstudio,apple,arch,bash,c,cloudflare,css,debian,deno,discord,docker,fastapi,flask,git,github,githubactions,gmail,graphql,html,java,js,linux,md,mongodb,mysql,netlify,nextjs,nginx,nodejs,notion,npm,nuxtjs,obsidian,ps,php,pnpm,postgres,powershell,pr,pycharm,py,react,redis,sqlite,svg,tailwind,threejs,twitter,ts,ubuntu,vercel,vim,visualstudio,vite,vscode,vue,webpack,windows,wordpress",      // 引用链接
-        wap: "https://skillicons.dev/icons?i=ae,androidstudio,apple,arch,bash,c,cloudflare,css,debian,deno,discord,docker,fastapi,flask,git,github,githubactions,gmail,graphql,html,java,js,linux,md,mongodb,mysql,netlify,nextjs,nginx,nodejs,notion,npm,nuxtjs,obsidian,ps,php,pnpm,postgres,powershell,pr,pycharm,py,react,redis,sqlite,svg,tailwind,threejs,twitter,ts,ubuntu,vercel,vim,visualstudio,vite,vscode,vue,webpack,windows,wordpress&perline=10"     // 引用链接
+        pc: "https://skillicons.dev/icons?i=ae,androidstudio,apple,arch,bash,c,cloudflare,css,debian,deno,discord,docker,fastapi,flask,git,github,githubactions,gmail,graphql,html,java,js,linux,md,mongodb,mysql,netlify,nextjs,nginx,nodejs,notion,npm,nuxtjs,obsidian,ps,php,pnpm,postgres,powershell,pr,pycharm,py,react,redis,sqlite,svg,tailwind,threejs,twitter,ts,ubuntu,vercel,vim,visualstudio,vite,vscode,vue,webpack,windows,wordpress&theme=light",      // 引用链接
+        wap: "https://skillicons.dev/icons?i=ae,androidstudio,apple,arch,bash,c,cloudflare,css,debian,deno,discord,docker,fastapi,flask,git,github,githubactions,gmail,graphql,html,java,js,linux,md,mongodb,mysql,netlify,nextjs,nginx,nodejs,notion,npm,nuxtjs,obsidian,ps,php,pnpm,postgres,powershell,pr,pycharm,py,react,redis,sqlite,svg,tailwind,threejs,twitter,ts,ubuntu,vercel,vim,visualstudio,vite,vscode,vue,webpack,windows,wordpress&perline=10&theme=light"     // 引用链接
     },
 
     // 页脚

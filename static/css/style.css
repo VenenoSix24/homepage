@@ -465,15 +465,21 @@ body {
 .projectItem {
   margin: 7px;
   display: flex;
+  align-items: center; /* 关键：垂直居中卡片内的所有内容 */
   background-color: var(--item_bg_color);
   border-radius: 8px;
-  padding: 15px;
-  height: 95px;
+  padding: 20px; /* 增加内边距，让内容呼吸 */
+  height: 105px; /* 增加卡片高度以适应更大的字体 */
   width: calc(25% - 15px);
   backdrop-filter: blur(var(--card_filter));
   -webkit-backdrop-filter: blur(var(--card_filter));
-  transition: all 0.2s ease-out; /* 动画优化 */
-  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+
+/* 针对 Project 卡片 (.b) 的特定样式 */
+.projectItem.b {
+  width: calc(50% - 15px); /* 一行显示两个 */
+  height: 110px; /* 可以适当增加高度，让布局更协调 */
 }
 
 .projectItem.pressed {
@@ -484,50 +490,78 @@ body {
 .projectItem:hover {
   box-shadow: 0 8px 16px -4px #2c2d300c;
   transform: translateY(-5px);
-  background: var(--item_hover_color);
+}
+
+.projectItem:hover .projectItemLeft {
+  width: 100%;
 }
 
 .projectItem:hover .projectItemRight {
+  width: 0%;
   opacity: 0;
-  transform: scale(0.8) rotate(20deg);
+}
+
+.projectItem:hover .projectItemRight img {
+  transform: rotate(20deg) scale(0.8);
+}
+
+.projectItem:hover h1 {
+  font-size: 20px; /* 悬浮时标题变得更大 */
 }
 
 .projectItemLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 垂直居中标题和描述 */
   transition: width 0.4s ease;
   height: 100%;
-  width: 100%; /* 左侧始终占满 */
-}
-
-.projectItemLeft p {
-  font-size: 12px;
-  margin-top: 5px;
-  color: var(--item_left_text_color);
-  opacity: 1; /* 默认显示 */
-  transition: all 0.3s ease;
+  width: 80%;
 }
 
 .projectItemLeft h1 {
-  font-weight: normal;
-  font-size: 16px;
+  font-weight: 500; /* 加粗标题，使其更有分量 */
+  font-size: 18px; /* 增大默认标题字号 */
   margin: 0px;
   transition: font-size 0.4s ease;
   color: var(--item_left_title_color);
 }
 
+/* 单独控制 Project 卡片 (.b) 的标题字体大小 */
+.projectItem.b .projectItemLeft h1 {
+  font-size: 20px; /* 你可以根据需要修改这个值 */
+}
+
+/* 可以单独控制悬浮时的大小 */
+.projectItem.b:hover .projectItemLeft h1 {
+  font-size: 22px; /* 你可以根据需要修改这个值 */
+}
+
+.projectItemLeft p {
+  font-size: 14px; /* 增大描述字号 */
+  margin-top: 16px; /* 调整与标题的间距 */
+  color: var(--item_left_text_color);
+}
+
+/* 单独控制 Project 卡片 (.b) 的描述字体大小 */
+.projectItem.b .projectItemLeft p {
+  font-size: 16px; /* 你可以根据需要修改这个值，比如 16px */
+}
+
 .projectItemRight {
-  transition: all 0.3s ease-out;
+  overflow: hidden;
+  transition: all 0.4s ease;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 20%;
   height: 100%;
   opacity: 1;
-  transform: scale(1) rotate(0deg);
 }
 
 .projectItemRight img {
-  height: 39px;
-  width: 39px;
+  height: 42px;
+  width: 42px;
+  transition: transform 0.4s ease;
 }
 
 .skill {
@@ -565,14 +599,12 @@ footer {
 }
 
 @media (max-width: 1150px) {
-  .a {
+  .projectItem.a,
+  .projectItem.b {
     width: calc(50% - 20px);
   }
   .projectItem {
     margin: 10px;
-  }
-  .b {
-    width: calc(50% - 20px);
   }
 }
 
@@ -581,32 +613,33 @@ footer {
     display: none;
   }
 
-  .a .projectItemRight {
-    display: block; /* 移动端也显示图标 */
+  /* --- 移动端样式修正 --- */
+  .projectItem.a .projectItemRight {
+    display: none;
   }
 
-  .b {
+  .projectItem.a .projectItemLeft {
+    width: 100%;
+    /* align-items: center; // 水平居中 flex 项
+    text-align: center;  // 使文本本身居中 */
+  }
+
+  .projectItem.a {
+    width: calc(50% - 18px);
+    margin: 9px;
+  }
+
+  .projectItem.b {
     height: 110px;
     margin: 8px 15px;
     width: calc(100% - 30px);
   }
 
-  .b .projectItemRight {
-    display: block; /* 移动端也显示图标 */
+  .projectItem.b .projectItemLeft p {
+    font-size: 14px; /* 你可以根据需要修改这个值，比如 16px */
   }
 
-  .projectItem:hover {
-    transform: translateY(-2px); /* 移动端悬浮效果减弱 */
-  }
-
-  .projectItemLeft {
-    width: 80%; /* 移动端恢复左右布局 */
-  }
-
-  .a {
-    width: calc(50% - 18px);
-    margin: 9px;
-  }
+  /* --- 修正结束 --- */
 
   .right {
     width: 100%;
@@ -628,8 +661,7 @@ footer {
     margin-top: 4vw;
   }
   .projectItem {
-    padding: 10px;
-    height: 100px;
+    padding: 10px 24px;
   }
   .projectItemLeft p {
     font-size: 13px;
@@ -640,7 +672,7 @@ footer {
   }
 
   .projectItem:hover h1 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .skill #skillWap {
