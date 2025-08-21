@@ -45,15 +45,15 @@ const siteConfig = {
 
     // 项目列表
     siteProjects: [
-        { class: 'a', href: "https://love.776624.xyz/", imgSrc: "./static/img/n10.webp", title: "📔 博客", description: "记录点点滴滴" },
-        { class: 'a', href: "https://home.776624.xyz", imgSrc: "./static/img/n5.webp", title: "🪴 主页", description: "另一个好看主页" },
-        { class: 'a', href: "https://liveterm.776624.xyz/", imgSrc: "./static/img/n6.webp", title: "🖥 终端", description: "有趣的在线终端" },
-        { class: 'a', href: "https://hello-nav.776624.xyz/", imgSrc: "./static/img/n1.webp", title: "🔗 导航", description: "开发者必备导航" }
+        { class: 'a', href: "https://love.ivyris.top/", imgSrc: "./static/img/n10.webp", title: "📔 博客", description: "记录点点滴滴" },
+        { class: 'a', href: "https://home.ivyris.top/", imgSrc: "./static/img/n5.webp", title: "🪴 主页", description: "另一个好看主页" },
+        { class: 'a', href: "https://liveterm.ivyris.top/", imgSrc: "./static/img/n6.webp", title: "🖥 终端", description: "有趣的在线终端" },
+        { class: 'a', href: "https://hello-nav.ivyris.top/", imgSrc: "./static/img/n1.webp", title: "🔗 导航", description: "开发者必备导航" }
     ],
     projectProjects: [
         { class: 'b', href: "https://github.com/VenenoSix24/igolib-ldu", imgSrc: "./static/img/n2.webp", title: "🤖 我去抢个座", description: "基于 Python 实现的预约抢座系统" },
         { class: 'b', href: "https://github.com/VenenoSix24/kawaii-homepage", imgSrc: "./static/img/n8.webp", title: "🌸 总之就是非常可爱", description: "一个美观的个人网站/主页/博客" },
-        { class: 'b', href: "https://m.776624.xyz", imgSrc: "./static/img/n13.webp", title: "🍎 Hackintosh OC EFI", description: "适配 AMD CPU GPU 的黑苹果 EFI" },
+        { class: 'b', href: "https://github.com/VenenoSix24/MSI-B350M-MORTAR-Hackintosh-OpenCore-EFI", imgSrc: "./static/img/n13.webp", title: "🍎 Hackintosh OC EFI", description: "适配 AMD CPU GPU 的黑苹果 EFI" },
         { class: 'b', href: "https://github.com/VenenoSix24/DV-Encrypter", imgSrc: "./static/img/n7.webp", title: "🎲 打瓦加密器", description: "使用“打”“瓦”来加解密文本，娱乐向" }
     ],
 
